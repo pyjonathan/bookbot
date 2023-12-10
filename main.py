@@ -1,5 +1,5 @@
-def print_report(character_count_list, word_count):
-    print("--- Begin report of books/frankenstein.txt ---")
+def print_report(character_count_list, word_count, file_name):
+    print(f"--- Begin report of books/{file_name} ---")
     print(f"{word_count} words found in the document")
     print()
     for item in character_count_list:
@@ -31,7 +31,7 @@ for k in c_dict:
     
 c_list.sort(reverse=True)
 
-print_report(c_list, len(words))
+print_report(c_list, len(words), "frankenstein.txt")
 
 
 
